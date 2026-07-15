@@ -17,6 +17,8 @@ UWS_VERSION="0.1.0-alpha"
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 source "${SCRIPT_DIR}/detect-unraid.sh"
+source "${SCRIPT_DIR}/detect-lxc.sh"
+
 
 print_header() {
     echo
@@ -43,6 +45,8 @@ main() {
 
     echo "[OK] Linux detected."
     detect_unraid
+    detect_lxc
+    
     echo
     echo "Bootstrap completed successfully."
 }
