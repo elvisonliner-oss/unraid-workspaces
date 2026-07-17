@@ -8,15 +8,18 @@
 
 detect_unraid() {
 
-    if [[ ! -f "/etc/unraid-version" ]]; then
-        echo "[ERROR] Unraid installation not detected."
+    echo
+    echo "Checking Unraid..."
+
+    if [[ ! -f /etc/unraid-version ]]; then
+        log_error "Unraid not detected."
         return 1
     fi
 
     local VERSION
     VERSION=$(cat /etc/unraid-version)
 
-    echo "[OK] Unraid detected."
+    log_ok "Unraid detected."
     echo "      Version : ${VERSION}"
 
     return 0
