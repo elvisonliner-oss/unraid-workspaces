@@ -22,7 +22,7 @@ detect_storage() {
     echo "      Path : /mnt/docker_data"
 
     if [[ ! -d "${STORAGE_ROOT}" ]]; then
-        echo "[INFO] Workspace directory does not exist yet."
+        log_info "Workspace directory does not exist yet."
         echo "       It will be created during installation."
     else
         echo "[OK] Workspace directory found."
