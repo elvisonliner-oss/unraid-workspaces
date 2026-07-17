@@ -16,12 +16,12 @@ detect_lxc() {
         local VERSION
         VERSION=$(lxc --version 2>/dev/null || echo "unknown")
 
-        echo "[OK] LXC detected."
+        log_ok "LXC detected."
         echo "      Version : ${VERSION}"
 
         return 0
     fi
 
-    echo "[ERROR] LXC command not found."
+    log_error "LXC command not found."
     return 2
 }
