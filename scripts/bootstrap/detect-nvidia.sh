@@ -12,7 +12,7 @@ detect_nvidia() {
     echo "Checking NVIDIA..."
 
     if ! command -v nvidia-smi >/dev/null 2>&1; then
-        echo "[ERROR] nvidia-smi not found."
+        log_error "nvidia-smi not found."
         return 3
     fi
 
