@@ -12,16 +12,31 @@
 
 set -euo pipefail
 
-UWS_VERSION="0.1.0-alpha"
-
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
-source "${SCRIPT_DIR}/detect-unraid.sh"
-source "${SCRIPT_DIR}/detect-lxc.sh"
-source "${SCRIPT_DIR}/detect-storage.sh"
-source "${SCRIPT_DIR}/detect-nvidia.sh"
+###############################################################################
+
+# Libraries
+
+###############################################################################
 
 source "${SCRIPT_DIR}/../lib/output.sh"
+
+source "${SCRIPT_DIR}/../lib/config.sh"
+
+###############################################################################
+
+# Detection Modules
+
+###############################################################################
+
+source "${SCRIPT_DIR}/detect-unraid.sh"
+
+source "${SCRIPT_DIR}/detect-lxc.sh"
+
+source "${SCRIPT_DIR}/detect-storage.sh"
+
+source "${SCRIPT_DIR}/detect-nvidia.sh"
 
 
 print_header() {
