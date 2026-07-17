@@ -19,6 +19,7 @@ SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 source "${SCRIPT_DIR}/detect-unraid.sh"
 source "${SCRIPT_DIR}/detect-lxc.sh"
 source "${SCRIPT_DIR}/detect-storage.sh"
+source "${SCRIPT_DIR}/detect-nvidia.sh"
 
 
 print_header() {
@@ -48,6 +49,7 @@ main() {
     detect_unraid
     detect_lxc
     detect_storage
+    detect_nvidia
     
     echo
     echo "Bootstrap completed successfully."
