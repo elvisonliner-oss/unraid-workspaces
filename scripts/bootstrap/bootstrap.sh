@@ -21,6 +21,8 @@ source "${SCRIPT_DIR}/detect-lxc.sh"
 source "${SCRIPT_DIR}/detect-storage.sh"
 source "${SCRIPT_DIR}/detect-nvidia.sh"
 
+source "${SCRIPT_DIR}/../lib/output.sh"
+
 
 print_header() {
     echo
