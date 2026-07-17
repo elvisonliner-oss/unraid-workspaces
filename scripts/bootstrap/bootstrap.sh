@@ -47,7 +47,7 @@ main() {
     print_header
     check_linux
 
-    echo "[OK] Linux detected."
+    log_ok "Linux detected."
     detect_unraid
     detect_lxc
     detect_storage
