@@ -1,67 +1,94 @@
-Unraid Workspaces
+# Unraid Workspaces
 
-GPU accelerated Linux Workspaces for Unraid using LXC.
+Production-ready GPU-accelerated Linux Workspaces for Unraid using LXC technology.
 
-Overview
+---
 
-Unraid Workspaces is an open-source platform that makes it easy to deploy and manage GPU accelerated Linux workspaces on Unraid.
+## Overview
 
-The project focuses on:
+Unraid Workspaces is an open-source project for building GPU-accelerated Linux workspaces on Unraid.
 
-* NVIDIA GPU acceleration
-* LXC-based Linux workspaces
-* Modern web management
-* Persistent storage
-* Simple installation
-* Expandable architecture
+The goal is to provide reproducible, maintainable and high-performance desktop environments that integrate seamlessly with modern GPU hardware while remaining easy to deploy and manage.
 
-Planned Features
+Rather than focusing on a single desktop or distribution, Unraid Workspaces provides a flexible foundation for different workspace types.
 
-Core
+---
 
-* Automatic LXC creation
-* GPU detection
-* Storage management
-* Logging
-* Configuration management
+## Current Status
 
-Desktop
+**Current Release**
 
-* KDE Plasma
-* TigerVNC
-* noVNC
-* SSH
-* PipeWire
-* Sunshine (planned)
+**v0.3.0 – Foundation**
 
-Manager
+**Status**
 
-* Web dashboard
-* Workspace management
-* GPU monitoring
-* Backup & Restore
-* Snapshot management
-* Docker integration
+🟢 Stable Foundation
 
-Roadmap
+---
 
-See ROADMAP.md
+## Features
 
-Status
+### Infrastructure
 
-Current version:
+- Debian 13 LXC workspace
+- NVIDIA GPU passthrough
+- NVIDIA userspace integration
+- Hardware-accelerated OpenGL
+- Headless Xorg
+- XFCE Desktop
+- systemd service architecture
+- Btrfs snapshot support
 
-v0.1.0-alpha
+### Remote Access
 
-This project is currently in active development.
+- Sunshine
+- Moonlight compatible
+- AV1 NVENC
+- H.264 NVENC
+- HEVC NVENC
 
-Philosophy
+---
 
-The goal is not to create “just another Linux desktop”.
+## Planned
 
-The goal is to provide the easiest way to deploy GPU accelerated Linux workspaces on Unraid.
+### Release 0.4 – Gaming
 
-Every release should be useful on its own.
+- Steam
+- Vulkan
+- PipeWire
+- Gaming optimizations
+
+### Release 0.5 – Experience
+
+- Heroic Games Launcher
+- Controller support
+- Audio improvements
+- Additional desktop options
+
+### Release 1.0
+
+Production-ready GPU-accelerated Workspace Platform for Unraid.
+
+---
+
+## Project Philosophy
+
+Unraid Workspaces is designed with a strong focus on:
+
+- clean architecture
+- reproducible releases
+- documented recovery procedures
+- maintainable configuration
+- incremental development
+- production-ready infrastructure
+
+Every release should be stable, reproducible and useful on its own.
+
+---
+
+## License
+
+MIT License
 
 License
 
