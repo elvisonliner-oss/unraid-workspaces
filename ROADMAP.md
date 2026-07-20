@@ -1,58 +1,67 @@
-Roadmap
+# Roadmap
 
-v0.1.0-alpha
+---
 
-Foundation
+## v0.3.0 – Foundation ✅
 
-* Repository setup
-* Documentation
-* Storage layout
-* Bootstrap scripts
-* GPU detection
-* LXC detection
+Completed
 
-v0.2.0-alpha
+### Infrastructure
 
-Workspace
+- Debian 13 LXC workspace
+- NVIDIA GPU passthrough
+- NVIDIA userspace integration
+- Hardware accelerated OpenGL
+- Headless Xorg
+- XFCE Desktop
+- systemd service architecture
+- Btrfs snapshot workflow
 
-* Create LXC
-* User management
-* SSH
-* Basic networking
+### Remote Access
 
-v0.3.0-alpha
+- Sunshine
+- Moonlight compatibility
+- AV1 / HEVC / H.264 NVENC
 
-Desktop
+### Project
 
-* KDE Plasma
-* TigerVNC
-* noVNC
-* PipeWire
+- Initial documentation
+- Repository structure
+- Release workflow
 
-v0.4.0-alpha
+---
 
-Manager
+## v0.4.0 – Gaming
 
-* Web dashboard
-* Workspace control
-* GPU monitoring
-* Logs
+Planned
 
-v0.5.0-beta
+- Steam installation
+- Vulkan support
+- PipeWire audio
+- Performance optimizations
+- Controller support
 
-Remote Access
+---
 
-* Sunshine
-* Moonlight
-* RDP support
+## v0.5.0 – Workspace Experience
 
-v1.0.0
+Planned
 
-Stable Release
+- Heroic Games Launcher
+- Battle.net support
+- Additional desktop optimizations
+- Extended audio support
+- Optional application templates
 
-* Backup
-* Restore
-* Snapshots
-* Plugin architecture
-* Documentation
-* Automated installer
+---
+
+## v1.0.0 – Production
+
+Planned
+
+- Automated installation
+- Backup and restore
+- Snapshot management
+- Workspace templates
+- Comprehensive documentation
+- Stable production release
